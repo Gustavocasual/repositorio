@@ -1,0 +1,108 @@
+body{
+    
+    overflow: hidden;
+    background-image: url(/mountain-range-3840x2160-18000.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.bemvindo{
+    position: absolute;
+    width: 490px;
+    height: 90px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    animation: vem 4s infinite alternate-reverse;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes vem{
+    to{
+        transform: scale(1.1);
+    }
+    from{
+        transform: scale(1.4);
+    }
+}
+@media (min-width:320px) and (max-width:540px){
+    .bemvindo{
+        position: absolute;
+        width: 90%;
+        height: 90px;
+        color: #ffffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        animation:  4s infinite alternate-reverse;
+        transform: translate(-50%,-50%);
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @keyframes vem{
+        to{
+            transform: scale(1.1);
+        }
+        from{
+            transform: scale(1.4);
+        }
+    }
+}
+.logo{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    
+    top: 210px;
+    left: 50%;
+    animation: fjds 3s infinite alternate-reverse;
+    transform: translate(-50%,-50%);
+    align-items: center;
+}
+
+
+@keyframes fjds{
+    to{
+        color: rgb(255, 255, 255);
+    }
+    from{
+      
+        color: rgb(0, 213, 0);
+    }
+}
+@media (min-width:320px) and (max-width:540px){
+    .logo{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        color: #ffffff;
+        top: 210px;
+        left: 50%;
+        animation: fjds 3s infinite alternate-reverse;
+        transform: translate(-50%,-50%);
+        align-items: center;
+    }
+    
+    
+    @keyframes fjds{
+        to{
+            color: #ffffff;
+        }
+        from{
+            
+            color: rgb(0, 213, 0);
+        }
+    }
+}
+
